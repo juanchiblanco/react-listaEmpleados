@@ -4,7 +4,7 @@ import EmpleadoList from "./components/EmpleadoList";
 function App() {
   return (
     <>
-      <main className="my-3 sectionEmpleado">
+      <main className="my-3">
         <h1 className="text-center">Lista de empleados</h1>
         <EmpleadoList/>
       </main>

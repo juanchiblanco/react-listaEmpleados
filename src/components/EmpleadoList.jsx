@@ -70,8 +70,8 @@ const EmpleadoList = () => {
   ];
 
   return (
-    <section className='container my-5'>
-      <ListGroup>
+    <section className='my-5 d-flex justify-content-center'>
+      <ListGroup className='sectionEmpleado'>
         {
           empleados.map((empleado)=> <EmpleadoRow key={empleado.id} nombre={empleado.fullName} area={empleado.department} puesto={empleado.title} empleado={empleado}/>)
         }
