@@ -1,5 +1,6 @@
 import ListGroup from 'react-bootstrap/ListGroup';
 import EmpleadoRow from './EmpleadoRow';
+import { useState } from 'react';
 
 const EmpleadoList = () => {
   let empleados = [
@@ -69,9 +70,11 @@ const EmpleadoList = () => {
   ];
 
   return (
-    <section className='container my-5 w-75'>
+    <section className='container my-5 sectionEmpleado'>
       <ListGroup>
-        <EmpleadoRow/>
+        {
+          empleados.map((empleado)=> <EmpleadoRow key={empleado.id} nombre={empleado.fullName} area={empleado.department} puesto={empleado.title} empleado={empleado}/>)
+        }
       </ListGroup>
     </section>
   );
