@@ -70,7 +70,7 @@ const EmpleadoList = () => {
   ];
 
   return (
-    <section className='container my-5 sectionEmpleado'>
+    <section className='container my-5'>
       <ListGroup>
         {
           empleados.map((empleado)=> <EmpleadoRow key={empleado.id} nombre={empleado.fullName} area={empleado.department} puesto={empleado.title} empleado={empleado}/>)

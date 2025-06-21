@@ -5,3 +5,13 @@
 }
 
 main{flex-grow: 1;}
+
+.sectionEmpleado{
+  width: 250px;
+}
+
+@media screen and (min-width: 768px) {
+  .sectionEmpleado{
+    width: 500px;
+  }
+}
